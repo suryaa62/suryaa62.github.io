@@ -14,6 +14,7 @@ import {
   Twitter,
   Instagram
 } from "lucide-react/"
+import Navbar from './components/navbar'
 
 const linkedInHandle = 'https://www.linkedin.com/in/suryakant-agrawal-7719191b8/'
 const githubHandle = 'https://github.com/suryaa62'
@@ -27,8 +28,9 @@ const redirectTo = (url: string) => {
 function App() {
 
   return (
-    <div className='flex justify-center h-screen items-center'>
-    <Card className='w-[300px] h-max '>
+    <>
+    <Navbar/>
+    <Card className='w-[300px] h-max ml-auto mr-auto my-auto'>
       <CardHeader>
         <CardTitle>Hey There! </CardTitle>
       </CardHeader>
@@ -53,7 +55,7 @@ function App() {
       </Button>
       </CardFooter>
     </Card>
-    </div>
+    </>
   )
 }
 
